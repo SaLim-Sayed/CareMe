@@ -1,0 +1,477 @@
+/* Chatbot */
+body {
+  margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Fira Sans','Droid Sans','Helvetica Neue',sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+code {
+  font-family: source-code-pro,Menlo,Monaco,Consolas,'Courier New',monospace
+}
+
+
+
+/* _____________________________carousel___________________________________ */
+.car {
+  /* position: absolute;
+  top: -10px;
+  left: 200px;
+  width: 1000px;
+  height: 80vh;
+  margin-bottom: 10px;
+  margin-top: 10px; */
+  width: 1000px;
+  height: 585px;
+  background-color: #2a4766;
+  position: relative;
+  left: 180px;
+
+}
+.pm {
+  color: #f0f8ff;
+  font-size: 20px;
+  position: relative;
+  left: 100px;
+  text-align: left;
+  top: 100px
+}
+@media (max-width:500px) {
+  .car {
+    /* position: absolute;
+    top: -10px;
+    left: 2px;
+    width: 500px;
+    height: 70vh;
+    margin-bottom: 10px;
+    margin-top: 10px; */
+    width: 400px;
+    height: 100vh;
+    background-color: #2a4766;
+  }
+  .pm {
+    color: #f0f8ff;
+    font-size: 20px;
+    position: relative;
+    left: 10px;
+    text-align: left;
+    top: 100px
+  }
+  .center {
+    position: relative;
+    top: -250px;
+    left: 50%;
+    max-block-size: 200px;
+  }
+  .center1 {
+    position: relative;
+    top: -150px;
+    left: 0;
+    color: #000;
+    max-block-size: 200px
+  }
+  .center2 {
+    position: relative;
+    top: -170px;
+    left: 0;
+    max-block-size: 200px
+  }
+  .center3 {
+    position: relative;
+    top: -80px;
+    left: 0;
+    max-block-size: 100px
+  }
+}
+/* @media (max-width:768px) {
+  .car {
+    width: 300px
+  }
+}
+@media (max-width:768px) {
+  .car {
+    width: 700px
+  }
+} */
+/* @media (max-width:992px) {
+  .car {
+    width: 900px
+  }
+}
+@media (max-width:1200px) {
+  .car {
+    width: 1100px
+  }
+} */
+.center {
+  position: relative;
+  top: -200px;
+  left: 50%;
+  max-block-size: 300px
+}
+.center1 {
+  position: relative;
+  top: -150px;
+  left: 50%;
+  color: #000;
+  max-block-size: 300px
+}
+.center2 {
+  position: relative;
+  top: -170px;
+  left: 50%;
+  max-block-size: 350px
+}
+.center3 {
+  position: relative;
+  top: -80px;
+  left: 50%;
+  max-block-size: 700px
+}
+
+.mid {
+  border-left: 1px dotted #696969;
+  border-right: 1px dotted #696969
+}
+.Contact {
+  background-color: #d3d3d3;
+  color: #626262
+}
+.Contact .content_left {
+  font-size: 14px;
+  color: #626262
+}
+.Contact .content_left i {
+  margin-right: 5px
+}
+.Contact .content_left li {
+  margin-left: 5px;
+  margin-top: 10px
+}
+.Contact .content_right {
+  border-left: 1px dotted #fff
+}
+.Contact .content_right h3 {
+  font-family: serif
+}
+.Contact .content_right label {
+  display: block;
+  margin-top: 10px
+}
+.Contact .content_right .field {
+  width: 100%;
+  border: 1px solid #626262;
+  padding: 3px
+}
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------Predict--------------------------------- */
+.Appp{
+  display: flex;
+  /* background-color: #dff0f8; */
+  background-image: url(20-a6cd4cSpecialties-1-10-06.webp);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;}
+
+.id {
+  position: relative;
+  top: -50px;
+}
+.pre{
+  background-image: url(20-a6cd4cSpecialties-1-10-06.webp);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.contents {
+  background-image: url(20-a6cd4cSpecialties-1-10-06.webp);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #f0f8ff;
+  width: 80%;
+  position: relative;
+  left: 263px;
+  padding-bottom: 50px;
+  top: -970px;
+
+}
+.contents2 {
+  background-image: url(20-a6cd4cSpecialties-1-10-06.webp);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #f0f8ff;
+  width: 100%;
+  position: relative;
+  height: auto;
+  padding-bottom: 101px;
+
+}
+.categories {
+  width: 20%;
+  background-color: rgba(74,164,184,.65);
+  color: #f0f8ff;
+  position: relative;
+  top: 60px;
+  padding-bottom: 45px;
+}
+.cat {
+  color: #f0f8ff;
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 10px
+}
+.catbtn {
+  color: #fff;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: .3s;
+  background-color: #323367;
+  width: 200px;
+  color: #f0f8ff;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 2px;
+  border: #7386d5;
+  line-height: 40px
+}
+.catbtn:hover {
+  opacity: .6
+}
+hr {
+  color: #f0f8ff;
+  background-color: #fff;
+  width: 2px
+}
+.percaution,
+.predict {
+  display: flex;
+  align-items: center;
+  /* background-color: #8294ded8; */
+  width: 80%;
+  margin-left: 10%;
+  position: relative;
+  top: -85px;
+
+
+}
+.per-ar,
+.predict1 {
+  width: 50%;
+  align-items: center;
+  background-color: #5669b7be;
+  text-align: right;
+  padding: 20px
+}
+.per-en,
+.predict2 {
+  width: 50%;
+  align-items: center;
+  background-color: #5669b7be;
+  padding: 20px
+}
+.mainPredict {
+  margin-left: 45%;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  /* position: relative;
+  top: -100px; */
+}
+form {
+  width: 100%
+}
+.notes {
+  background-color: #455074cc;
+  color: #f0f8ff;
+  width: 80%;
+  margin-left: 10%;
+  padding: 10px;
+  position: relative;
+  top: -75px;
+}
+.bdy {
+  height: 100px;
+  background-color: rgba(0,0,0,.044);
+  position: relative;
+  left: -20px;
+  /* top: 40px; */
+  text-align: center;
+  padding: 20px
+}
+.chh {
+  color: #191818;
+  border-radius: 15px;
+  background-color: #7da5d0
+}
+.chh:checked {
+  opacity: .5
+}
+.chh:hover {
+  opacity: .8
+}
+.btnd {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #204a7d;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 28px;
+  width: 150px;
+  transition: all .5s;
+  cursor: pointer;
+  height: 50px;
+  position: relative;
+  left: 430px
+}
+.btnd span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: .5s
+}
+.btnd span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: .5s
+}
+.btnd:hover span {
+  padding-right: 25px
+}
+.btnd:hover span:after {
+  opacity: 1;
+  right: 0
+}
+.btnn {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #204a7d;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 28px;
+  width: 180px;
+  transition: all .5s;
+  cursor: pointer;
+  height: 50px;
+  position: relative;
+  left: 10px;
+  top: 10px
+}
+.btnn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: .5s
+}
+.btnn span:after {
+  content: ' \226A';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -160px;
+  transition: .5s
+}
+.btnn:hover span {
+  padding-right: 25px
+}
+.btnn:hover span:after {
+  opacity: 1;
+  right: 0
+}
+
+
+
+
+/*------------------------------------- footer ----------------------------------*/
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(5, 16, 28);;
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+  
+}
+
+/* --------------------------------------FirstAid------------------------------ */
+.faid{
+   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("175-1758883_medical-background-free-image-background-for-hospital-website.png");
+height: 100%;
+position: relative;
+display: block;
+top: 69px;
+}
+.aid{
+  text-align: center;
+  background-color: rgb(242, 247, 245);
+  border: #61dafb solid 2px;
+  height: 82.5vh;
+  position: relative;
+  top: 3px;
+}
+.check{
+  margin: 20px;
+  
+}
+.bt1 {
+  
+  background-color: rgb(25, 38, 41);
+  margin: 10px;
+  
+}
+input{
+  text-align: center;
+  margin: -10px;
+}
+.source-text{
+  /* width: 50%; */
+  background-color: rgb(45, 66, 71);
+  color: rgb(141, 199, 238);
+  align-items: center;
+  text-align: center;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+.firstAid1{
+  background-color: rgb(45, 97, 106);
+  
+  color: rgb(90, 173, 245);
+  text-align: left;
+  width: 50%;
+}
+.lbl{
+  background-color: rgb(51, 81, 88); 
+  color: #dee8eb;
+}
+
+.firstAid2{
+  background-color: rgb(68, 128, 138);
+  color: aliceblue;
+  text-align: right;
+  width: 50%;
+}
+
+.pred{
+  display: flex;
+  
+}
